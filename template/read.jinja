@@ -32,18 +32,23 @@
               <li class="nav-item">
                 <a class="nav-link" href="/message.html">Send message</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/read.html">Messages</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+<div>
+  {% for message in messages %}
+  <p>{{message.username}}</p>
+  <div>{{message.message}}</div>
+ {% endfor %}
+</div>
 
-      <div class="p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal">404</h1>
-        <p class="fs-5 text-muted">
-          Not Found
-        </p>
-      </div>
     </header>
+    <main class="container">
 
+    </main>
   </body>
 </html>
